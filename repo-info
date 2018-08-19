@@ -1,0 +1,6 @@
+commit-sha-1: 7003db0f48b819b135db80972277a6895abb8521
+commit-short: 7003db0
+branch: HEAD
+remote: https://github.com/openstack/charm-keystone
+info-generated: Mon Jul 16 07:22:23 UTC 2018
+note: This file should exist only in a built or released charm artifact (not in the charm source code tree).
