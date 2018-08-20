@@ -376,6 +376,10 @@ def update_all_identity_relation_units(check_db_ready=True):
     for rid in relation_ids('identity-credentials'):
         for unit in related_units(rid):
             identity_credentials_changed(relation_id=rid, remote_unit=unit)
+    log('Firing trustee_credentials_changed hook for all related services.')
+    for rid in relation_ids('trustee-credentials'):
+        for unit in related_units(rid):
+            trustee_credentials_changed(relation_id=rid, remote_unit=unit)
 
 
 @synchronize_ca_if_changed(force=True)
